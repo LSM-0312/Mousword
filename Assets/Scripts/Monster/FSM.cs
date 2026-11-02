@@ -12,9 +12,9 @@ public class FSM
 
     public void changeState(BaseState newState)
     {
-        if (newState == curState) return;
+        if (newState.GetType() == curState.GetType()) { return; }
 
-       //if (curState != null) { curState.stateExit(); Debug.Log("State exited: " + curState.GetType().Name); }
+        if (curState != null) { curState.stateExit(); }
 
         curState = newState;
         curState.stateEnter();
