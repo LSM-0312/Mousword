@@ -13,7 +13,8 @@ public class Goblin : Monster
     [HideInInspector] public bool isGround;                   //고블린이 이동할 때 바로앞의 땅을 감지하는 변수
     private float checkRadius = 0.2f;       //고블린이 이동할 때 바로앞의 땅을 감지하는 반지름
 
-    //public float coolTime = 1f; //고블린이 공격 후 대기하는 시간
+    public GameObject Knife;
+    public Transform knifeSpawnPoint;
 
     protected override void Start()
     {
@@ -33,6 +34,8 @@ public class Goblin : Monster
         {
             isWait = true; //대기상태 갱신
         }
+
+        Debug.Log(curState);
 
         anim.SetBool("Idle", isWait); //대기 애니메이션 상태 전환
         fsm.stateUpdate();
@@ -72,6 +75,15 @@ public class Goblin : Monster
             case state.die:
                 fsm.changeState(new CommonState.DieState(this));
                 break;
+        }
+    }
+
+    public void Attack(float speed)
+    {
+        if (Knife != null && knifeSpawnPoint != null)
+        {
+            GameObject knife = Instantiate(Knife, knifeSpawnPoint.position, Quaternion.identity);
+            knife.GetComponent<Knife>().setSpeed(speed);
         }
     }
 }
