@@ -1,14 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class SignPost : MonoBehaviour
 {
-    [Header("UI¿ÀºêÁ§Æ® ¿¬°á")]
+    [Header("UIì˜¤ë¸Œì íŠ¸ ì—°ê²°")]
     [SerializeField] private GameObject bubbleUI;
     [SerializeField] private Image image;
 
-    [Header("UI³»ºÎ ±×¸²")]
-    [SerializeField] private Sprite signSprite;
+    [Header("UIë‚´ë¶€ ê·¸ë¦¼")]
+    [SerializeField] private Sprite[] signFrames;
+    [SerializeField] private float frameInterval = 0.4f;
+
+    private Coroutine animCoroutine;
 
     private void Start()
     {
@@ -22,17 +26,49 @@ public class SignPost : MonoBehaviour
 
     private void InitSignContent()
     {
-        if(image != null)
+        if(image == null)
         {
-            if(signSprite != null)
-            {
-                image.sprite = signSprite;
-                image.gameObject.SetActive(true);
-            }
-            else
-            {
-                image.gameObject.SetActive(false);
-            }
+            return;
+        }
+
+        bool hasFrames = signFrames != null && signFrames.Length > 0;
+        image.gameObject.SetActive(hasFrames);
+
+        if(hasFrames)
+        {
+            image.sprite = signFrames[0];
+        }
+    }
+
+    private void ShowBubble(bool show)
+    {
+        if(bubbleUI != null)
+        {
+            bubbleUI.SetActive(show);
+        }
+
+        if(animCoroutine != null)
+        {
+            StopCoroutine(animCoroutine);
+            animCoroutine = null;
+        }
+
+        if(show && image != null && signFrames != null && signFrames.Length > 1)
+        {
+            animCoroutine = StartCoroutine(PlayFrames());
+        }
+    }
+
+    private IEnumerator PlayFrames()
+    {
+        int index = 0;
+        WaitForSeconds wait = new WaitForSeconds(frameInterval);
+
+        while(true)
+        {
+            image.sprite = signFrames[index];
+            index = (index + 1) % signFrames.Length;
+            yield return wait;
         }
     }
 
@@ -40,10 +76,7 @@ public class SignPost : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(bubbleUI != null)
-            {
-                bubbleUI.SetActive(true);
-            }
+            ShowBubble(true);
         }
     }
 
@@ -51,10 +84,7 @@ public class SignPost : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(bubbleUI != null)
-            {
-                bubbleUI.SetActive(false);
-            }
+            ShowBubble(false);
         }
     }
 }
