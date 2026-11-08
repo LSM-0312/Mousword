@@ -87,7 +87,6 @@ GameObject:
   - component: {fileID: 6290920165535469172}
   - component: {fileID: 8662515426769932833}
   - component: {fileID: 4627108037955111586}
-  - component: {fileID: 8656035352911976693}
   - component: {fileID: 4835690899461930971}
   - component: {fileID: 6416824537247204623}
   m_Layer: 6
@@ -210,27 +209,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8656035352911976693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409251086046084318}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ae07ccb40654394eb443704314e593b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Monster
-  HPSlider: {fileID: 0}
-  maxHP: 100
-  currentHP: 0
-  moveSpeed: 4
-  damage: 10
-  player: {fileID: 0}
-  recognizeRadius: 5
-  groundCheck: {fileID: 0}
-  maxWaitTime: 2
 --- !u!114 &4835690899461930971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,10 +228,10 @@ MonoBehaviour:
   damage: 10
   player: {fileID: 0}
   recognizeRadius: 6
+  attackRadius: 2
   groundCheck: {fileID: 3263154770193855425}
   maxWaitTime: 2
-  attackRadius: 2
-  maxNormalMoveDistance: 3
+  maxIdleMoveDistance: 3
   noticeMoveDistance: 1
 --- !u!212 &6416824537247204623
 SpriteRenderer:

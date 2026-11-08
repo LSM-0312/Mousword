@@ -13,6 +13,9 @@ public class PlayerMove : MonoBehaviour
     public float checkRadius = 0.2f;   // 감지 범위
     public LayerMask isLayer;          // 바닥으로 인식할 레이어
 
+    // 켜면 좌우 이동과 점프 입력을 무시 (예: 마법사 캐스팅 중). 낙하는 그대로 진행된다.
+    public bool IsMovementLocked { get; set; }
+
     private Rigidbody2D rigid;      // 2D 물리 연산을 다루기 위한 컴포넌트 변수
     private float moveInput;        //키보드 좌/우 입력값을 담아둘 변수
 
@@ -41,10 +44,10 @@ public class PlayerMove : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, isLayer);
 
         // 방향키 입력 받음
-        moveInput = Input.GetAxisRaw("Horizontal");
+        moveInput = IsMovementLocked ? 0f : Input.GetAxisRaw("Horizontal");
 
         // 점프키가 눌리고 바닥에 닿아있는 상태일때 실행
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (!IsMovementLocked && Input.GetButtonDown("Jump") && isGrounded)
         {
             // 유니티 API인 linearVelocity를 사용하여 X축 속도는 기존 속도를 유지하고, Y축 속도만 jumpForce만큼 뛰아오르게함
             rigid.linearVelocity = new Vector2(rigid.linearVelocity.x, jumpForce);
