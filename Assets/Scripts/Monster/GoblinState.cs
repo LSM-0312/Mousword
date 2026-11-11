@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public static class GoblinState
 {
@@ -84,8 +83,6 @@ public static class GoblinState
     public class AttackState : BaseState
     {
         private Goblin goblin;
-        
-        public static bool isAttack = false;
 
         public AttackState(Monster monster) : base(monster)
         {
@@ -101,12 +98,10 @@ public static class GoblinState
         {
             if (goblin.isAnimeEnd)
             {
-                Debug.Log(isAttack);
-
-                goblin.groundCheck.transform.localPosition = new Vector2(goblin.player.position.x > goblin.transform.position.x ? -1 : 1
+                goblin.groundCheck.transform.localPosition = new Vector2((goblin.player.position.x > goblin.transform.position.x ? -1 : 1)
                     * Mathf.Abs(goblin.groundCheck.transform.localPosition.x), goblin.groundCheck.transform.localPosition.y);
 
-                if (isAttack)
+                if (goblin.isAttack)
                 {
                     goblin.anim.SetBool("Attack", false);
                     if (goblin.distanceToPlayer < goblin.attackRadius - 0.5f && goblin.isGround)
@@ -115,6 +110,7 @@ public static class GoblinState
                         goblin.moveDirection = goblin.player.position.x > goblin.transform.position.x ? -1 : 1; //플레이어 반대 방향으로 카이팅
                         goblin.flip(-goblin.moveDirection);
                         goblin.anim.SetBool("Run", true);
+                        goblin.anim.SetBool("Idle", false);
                     }
                     else if (goblin.distanceToPlayer > goblin.attackRadius - 0.5f || !goblin.isGround)
                     {
@@ -122,6 +118,7 @@ public static class GoblinState
                         goblin.moveDirection = goblin.player.position.x > goblin.transform.position.x ? 1 : -1; //플레이어 방향으로 회전
                         goblin.flip(-goblin.moveDirection);
                         goblin.anim.SetBool("Run", false);
+                        goblin.anim.SetBool("Idle", true);
                     }
                 }
                 else
@@ -129,8 +126,10 @@ public static class GoblinState
                     goblin.moveSpeed = 0f;
                     goblin.moveDirection = goblin.player.position.x > goblin.transform.position.x ? 1 : -1; //플레이어 방향으로 회전
                     goblin.flip(-goblin.moveDirection);
+                    goblin.isAnimeEnd = false;
+                    goblin.anim.SetBool("Idle", true);
                     goblin.anim.SetBool("Attack", true);       //에니메이션에 히트박스 이벤트 설정이 되어있어서 별도로 히트박스 이벤트 작성할 필요 없음
-                    isAttack = true;
+                    goblin.isAttack = true;
                 }
             }
         }

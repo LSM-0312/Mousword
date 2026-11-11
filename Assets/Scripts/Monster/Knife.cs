@@ -3,33 +3,35 @@ using UnityEngine;
 public class Knife : MonoBehaviour
 {
     public float moveSpeed = 2f;
-
     private int knifeDirection = 0;
+    private Goblin goblin;
 
     void Update()
     {
-        if (!isOutOfScreen())
-        {
-            transform.position = new Vector2(transform.position.x + knifeDirection * moveSpeed * Time.deltaTime, transform.position.y);
-        }
-        else
-        {
-            GoblinState.AttackState.isAttack = false;
-            Destroy(gameObject);
-        }
+        transform.position = new Vector2(transform.position.x + knifeDirection * moveSpeed * Time.deltaTime, transform.position.y);
     }
 
     public void setSpeed(float speed)
     {
         moveSpeed = speed;
     }
+    public void setGoblin(Goblin owner)
+    {
+        goblin = owner;
+    }
     public void setDirection(int direction)
     {
         knifeDirection = direction;
+        transform.localScale = new Vector3((direction >= 0 ? -1 : 1), 1, 1);
     }
-    public bool isOutOfScreen()
+
+    void OnBecameInvisible()
     {
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
-        return screenPos.x < 0 || screenPos.x > Screen.width || screenPos.y < 0 || screenPos.y > Screen.height;
+        if (goblin != null)
+        {
+            goblin.isAttack = false;
+        }
+        Destroy(gameObject);
     }
+    
 }

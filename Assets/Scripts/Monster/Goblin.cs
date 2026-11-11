@@ -4,7 +4,7 @@ public class Goblin : Monster
 {
     protected Rigidbody2D rigid;              // 2D 물리 연산을 다루기 위한 컴포넌트 변수
 
-    public float maxIdleMoveDistance = 3f;         //슬라임이 플레이어를 인식하지 않을 때 이동할 수 있는 최대 거리
+    public float maxIdleMoveDistance = 3f;         //고블린이 플레이어를 인식하지 않을 때 이동할 수 있는 최대 거리
     [HideInInspector] public Vector2 startPosition;                                   //고블린의 처음 위치
     [HideInInspector] public float curMoveDistance = 0f;                              //고블린이 이동한 거리
     public float noticeMoveDistance = 1f;                                             //고블린이 플레이어를 인식했을때 매번 이동하는 거리
@@ -15,6 +15,7 @@ public class Goblin : Monster
 
     public GameObject Knife;
     public Transform knifeSpawnPoint;
+    [HideInInspector] public bool isAttack = false; //고블린 검이 화면에 남아있음
 
     protected override void Start()
     {
@@ -34,8 +35,6 @@ public class Goblin : Monster
         {
             isWait = true; //대기상태 갱신
         }
-
-        Debug.Log(curState);
 
         anim.SetBool("Idle", isWait); //대기 애니메이션 상태 전환
         fsm.stateUpdate();
@@ -83,7 +82,23 @@ public class Goblin : Monster
         if (Knife != null && knifeSpawnPoint != null)
         {
             GameObject knife = Instantiate(Knife, knifeSpawnPoint.position, Quaternion.identity);
+
+            // 생성된 칼의 투명도를 1(불투명)로 변경
+            GameObject Body = knife.transform.Find("KnifeBody").gameObject;
+            SpriteRenderer sr = Body.GetComponent<SpriteRenderer>();
+            Color color = sr.color;
+            color.a = 1.0f;
+            sr.color = color;
+
+            MonsterHitBox hitBox = knife.GetComponentInChildren<MonsterHitBox>();
+            if (hitBox != null)
+            {
+                hitBox.SetMonster(this);
+            }
+
             knife.GetComponent<Knife>().setSpeed(speed);
+            knife.GetComponent<Knife>().setDirection(moveDirection);
+            knife.GetComponent<Knife>().setGoblin(this);
         }
     }
 }
