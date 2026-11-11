@@ -12,7 +12,6 @@ public static class CommonState
 
         public override void stateEnter() //상태에 들어갈 때 실행되는 코드
         {
-            Debug.Log("DieState entered for " + monster.name);
             monster.moveSpeed = 0f;
             if (monster.anim != null)
             {

@@ -62,6 +62,8 @@ public static class SlimeState
         public override void stateEnter() //상태에 들어갈 때 실행되는 코드
         {
             slime.flip(slime.player.position.x > slime.transform.position.x ? 1 : -1);
+            slime.startPosition = slime.transform.position;
+            slime.curMoveDistance = 0f; // 이동 거리 초기화
         }
 
         public override void stateUpdate() //상태에 들어갈 때 계속 실행되는 코드
@@ -104,17 +106,17 @@ public static class SlimeState
 
         public override void stateEnter() //상태에 들어갈 때 실행되는 코드
         {
-
+            slime.moveSpeed = 0f;
+            if (slime.anim != null)
+            {
+                slime.anim.SetBool("Attack", true);       //에니메이션에 히트박스 이벤트 설정이 되어있어서 별도로 히트박스 이벤트 작성할 필요 없음
+                                                          //slime.isAnimeEnd = false;
+            }
         }
 
         public override void stateUpdate() //상태에 들어갈 때 계속 실행되는 코드
         {
-            slime.moveSpeed = 0f;
-
-            if (slime.anim != null)
-            {
-                slime.anim.SetBool("Attack", true);       //에니메이션에 히트박스 이벤트 설정이 되어있어서 별도로 히트박스 이벤트 작성할 필요 없음
-            }
+            if (slime.isAnimeEnd) { slime.flip(slime.player.position.x > slime.transform.position.x ? 1 : -1);}
         }
 
         public override void stateExit() //상태에 나갈 때 실행되는 코드
@@ -122,6 +124,7 @@ public static class SlimeState
             if (slime.anim != null)
             {
                 slime.anim.SetBool("Attack", false);      //공격 애니메이션 끔
+                slime.isAnimeEnd = true;
             }
         }
 
