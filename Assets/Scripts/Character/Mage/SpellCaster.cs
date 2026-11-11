@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>주문이 커서 위치에서 만들어내는 효과의 종류.</summary>
 public enum SpellEffect
 {
-    None,           // 아직 구현되지 않은 슬롯 (스킬1 텔레포트 / 스킬3 군중제어 자리)
+    None,           // 아직 효과가 구현되지 않은 슬롯 (예: 군중 제어)
     SingleTarget,   // 커서 아래 몬스터 1마리에게만 피해
     Area            // 커서 중심 반경 내 모든 몬스터에게 피해
 }
@@ -58,8 +58,11 @@ public class SpellSlot
 ///
 /// 이 구조 덕에 주문을 늘려도 클릭 처리 코드는 그대로이고 데이터만 추가된다.
 ///
-/// 현재 구현된 효과: SingleTarget(기본 공격), Area(스킬2·4)
-/// 미구현: 스킬1 텔레포트, 스킬3 군중제어 → effect 를 None 으로 두면 장착되지 않음
+/// 숫자키 (키보드 상단):
+///   1 = 기본 공격, 2 = 범위 공격, 3 = 군중 제어, 4 = 궁극기
+///
+/// 현재 구현된 효과: SingleTarget(기본 공격), Area(범위 공격·궁극기용)
+/// effect 가 None 인 슬롯은 장착은 되지만 시전되지 않음 (조준점 회색)
 ///
 /// 역할 분리:
 ///   SpellCaster — "언제/시전해도 되는가" (입력·장착·마나·쿨다운·사거리)
@@ -89,10 +92,10 @@ public class SpellCaster : MonoBehaviour
         cursorIndex = 0
     };
 
-    [Header("스킬 슬롯 (숫자키 1~4)")]
-    [Tooltip("0번=스킬1, 1번=스킬2, 2번=스킬3, 3번=스킬4.\n" +
-             "미구현 스킬은 effect 를 None 으로 두면 장착되지 않는다.")]
-    [SerializeField] SpellSlot[] skills = new SpellSlot[4];
+    [Header("스킬 슬롯 (숫자키 2~4)")]
+    [Tooltip("0번=키2 범위 공격, 1번=키3 군중 제어, 2번=키4 궁극기. 키1은 기본 공격.\n" +
+             "effect 가 None 인 미구현 스킬도 장착은 되지만 시전되지 않는다.")]
+    [SerializeField] SpellSlot[] skills = new SpellSlot[3];
 
     [Header("공통 사거리")]
     [Tooltip("플레이어 기준 최대 시전 거리. 0 이하면 무제한.")]
@@ -104,7 +107,7 @@ public class SpellCaster : MonoBehaviour
     [Tooltip("피해를 줄 대상 레이어. 기본 Everything.")]
     [SerializeField] LayerMask targetLayer = ~0;
 
-    int equippedIndex = -1;   // -1 = 기본 공격, 0~3 = skills 배열
+    int equippedIndex = -1;   // -1 = 기본 공격, 0 이상 = skills 배열 번호
     PlayerMove playerMove;    // 캐스팅 중 이동 잠금용 (없어도 동작)
 
     [System.NonSerialized] SpellSlot castingSpell;   // 캐스팅 중인 주문. null 이면 캐스팅 중이 아님
@@ -121,7 +124,8 @@ public class SpellCaster : MonoBehaviour
     // ── 조준점(AimReticle)·UI 가 참조하는 읽기 전용 상태 ──
     public bool IsOnCooldown => Time.time - CurrentSpell.lastUseTime < CurrentSpell.cooldown;
     public bool HasEnoughMana => status == null || status.CurrentMp >= CurrentSpell.manaCost;
-    public bool CanCast => !IsCasting && !IsOnCooldown && HasEnoughMana;
+    public bool CanCast =>
+        CurrentSpell.effect != SpellEffect.None && !IsCasting && !IsOnCooldown && HasEnoughMana;
     public float MaxCastRange => maxCastRange;
     /// <summary>조준점의 범위 원 표시용 — 현재 주문의 반경.</summary>
     public float CurrentSpellRadius => CurrentSpell.radius;
@@ -173,17 +177,20 @@ public class SpellCaster : MonoBehaviour
 
     void HandleEquipInput()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) EquipSkill(0);
-        if (Input.GetKeyDown(KeyCode.Alpha2)) EquipSkill(1);
-        if (Input.GetKeyDown(KeyCode.Alpha3)) EquipSkill(2);
-        if (Input.GetKeyDown(KeyCode.Alpha4)) EquipSkill(3);
+        // 키보드 상단 숫자키 (키패드 아님)
+        if (Input.GetKeyDown(KeyCode.Alpha1)) EquipBasic();     // 기본 공격
+        if (Input.GetKeyDown(KeyCode.Alpha2)) EquipSkill(0);    // 범위 공격
+        if (Input.GetKeyDown(KeyCode.Alpha3)) EquipSkill(1);    // 군중 제어
+        if (Input.GetKeyDown(KeyCode.Alpha4)) EquipSkill(2);    // 궁극기
     }
 
-    /// <summary>스킬 장착. 미구현(None) 슬롯은 무시된다.</summary>
+    /// <summary>
+    /// 스킬 장착. 미구현(None) 슬롯도 장착되며, 시전은 TryBeginCast 에서 막힌다.
+    /// </summary>
     public void EquipSkill(int index)
     {
         if (index < 0 || index >= skills.Length) return;
-        if (skills[index] == null || skills[index].effect == SpellEffect.None) return;
+        if (skills[index] == null) return;
 
         equippedIndex = index;
         ApplyCursor();

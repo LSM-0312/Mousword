@@ -364,7 +364,7 @@ MonoBehaviour:
     cooldown: 0.3
     castTime: 2
     vfxPrefab: {fileID: 0}
-    cursorIndex: 0
+    cursorIndex: 1
   - name: "\uC8FC\uBB38"
     effect: 0
     damage: 25
@@ -373,16 +373,7 @@ MonoBehaviour:
     cooldown: 0.3
     castTime: 2
     vfxPrefab: {fileID: 0}
-    cursorIndex: 0
-  - name: "\uC8FC\uBB38"
-    effect: 0
-    damage: 25
-    radius: 0.3
-    manaCost: 10
-    cooldown: 0.3
-    castTime: 2
-    vfxPrefab: {fileID: 0}
-    cursorIndex: 0
+    cursorIndex: 2
   - name: "\uC8FC\uBB38"
     effect: 0
     damage: 25
@@ -391,7 +382,7 @@ MonoBehaviour:
     cooldown: 0.3
     castTime: 4
     vfxPrefab: {fileID: 0}
-    cursorIndex: 0
+    cursorIndex: 3
   maxCastRange: 0
   clampToRange: 1
   targetLayer:

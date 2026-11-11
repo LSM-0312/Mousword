@@ -106,12 +106,12 @@ TextureImporter:
       name: mage_cursor_skill2_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 71
-        width: 1387
-        height: 771
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1536
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.461}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
