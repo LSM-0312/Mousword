@@ -4,17 +4,14 @@ public class Slime : Monster
 {
     protected Rigidbody2D rigid;              // 2D 물리 연산을 다루기 위한 컴포넌트 변수
 
-    public float constMoveSpeed = 0f;                        //슬라임의 이동속도 상수화
     public float maxIdleMoveDistance = 3f;         //슬라임이 플레이어를 인식하지 않을 때 이동할 수 있는 최대 거리
     public float noticeMoveDistance = 1f;          //슬라임이 플레이어를 인식했을때 매번 이동하는 거리
-    public Vector2 startPosition;                                   //슬라임의 처음 위치
-    public float curMoveDistance = 0f;                              //슬라임이 이동한 거리
-    public int moveDirection = 1;                                   //슬라임이 이동할 방향(1: 오른쪽, -1: 왼쪽)
+    [HideInInspector] public Vector2 startPosition;                                   //슬라임의 처음 위치
+    [HideInInspector] public float curMoveDistance = 0f;                              //슬라임이 이동한 거리
+    [HideInInspector] public int moveDirection = 1;                                   //슬라임이 이동할 방향(1: 오른쪽, -1: 왼쪽)
 
-    public bool isGround;                   //슬라임이 이동할 때 바로앞의 땅을 감지하는 변수
+    [HideInInspector] public bool isGround;                   //슬라임이 이동할 때 바로앞의 땅을 감지하는 변수
     private float checkRadius = 0.2f;       //슬라임이 이동할 때 바로앞의 땅을 감지하는 반지름
-
-    private int isPause = 0;                //슬라임이 일시정지 상태인지 나타내는 변수
 
     protected override void Start()
     {
@@ -30,13 +27,13 @@ public class Slime : Monster
     protected override void Update()
     {
         base.Update();
-
         if (!isGround) //앞에 땅이 없으면
         {
             isWait = true; //대기상태 갱신
         }
 
         anim.SetBool("Wait", isWait); //대기 애니메이션 상태 전환
+        fsm.stateUpdate();
     }
 
     //물리 이동 부분
@@ -50,36 +47,20 @@ public class Slime : Monster
         //슬라임이 이동한 거리 계산
         curMoveDistance = Mathf.Abs(transform.position.x - startPosition.x);
 
-        fsm.stateUpdate();
-
         //슬라임이 대기 상태일 때
         if (isWait)
         {
             moveSpeed = 0; //이동속도 0으로 설정
         }
 
-        if (isPause == 1)
-        {
-            moveSpeed = 0;
-        }
+        
 
         rigid.linearVelocity = new Vector2(moveDirection * moveSpeed, rigid.linearVelocity.y);  //슬라임 이동
-    }
-    private void pauseTemporary(float speed)
-    {
-        if (speed <= 0)
-        {
-            isPause = 1;
-        }
-        else
-        {
-            isPause = 0;
-        }
     }
 
     public override void changeState(state newState)
     {
-        switch (curState)
+        switch (newState)
         {
             case state.idle:
                 fsm.changeState(new SlimeState.IdleState(this));

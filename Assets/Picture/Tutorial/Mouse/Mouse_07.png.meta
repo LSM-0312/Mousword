@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: f5d507fd62477344fb4b4168c265a7e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1523498194295136187
+    second: Mouse_07_0
+  - first:
+      213: -3301060280544909642
+    second: Mouse_07_1
+  - first:
+      213: 3344235131169227431
+    second: Mouse_07_2
+  - first:
+      213: -8045467635008288713
+    second: Mouse_07_3
+  - first:
+      213: 8905246065316541962
+    second: Mouse_07_4
+  - first:
+      213: 152640784762555528
+    second: Mouse_07_5
+  - first:
+      213: 6315675531466112811
+    second: Mouse_07_6
+  - first:
+      213: 44870201110290659
+    second: Mouse_07_7
+  - first:
+      213: -6428056708846020691
+    second: Mouse_07_8
+  - first:
+      213: 4484315133231964352
+    second: Mouse_07_9
+  - first:
+      213: -3833890079863113507
+    second: Mouse_07_10
+  - first:
+      213: -6315218272325015792
+    second: Mouse_07_11
+  - first:
+      213: 2894243516987825847
+    second: Mouse_07_12
+  - first:
+      213: 2905924711064504729
+    second: Mouse_07_13
+  - first:
+      213: 4688357562918255397
+    second: Mouse_07_14
+  - first:
+      213: -1971756323537905477
+    second: Mouse_07_15
+  - first:
+      213: -1214516595554064082
+    second: Mouse_07_16
+  - first:
+      213: 8648223773601828847
+    second: Mouse_07_17
+  - first:
+      213: 1443438764669055782
+    second: Mouse_07_18
+  - first:
+      213: -5304518481642717818
+    second: Mouse_07_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mouse_07_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 139
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf19ee298d842510800000000000000
+      internalID: 1523498194295136187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 139
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b628f32a274032d0800000000000000
+      internalID: -3301060280544909642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 139
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a249be122c196e20800000000000000
+      internalID: 3344235131169227431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738cd6b00d1c85090800000000000000
+      internalID: -8045467635008288713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0633a84d1ac59b70800000000000000
+      internalID: 8905246065316541962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c420a2cf94e1200800000000000000
+      internalID: 152640784762555528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_6
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ff9a91f69c5a750800000000000000
+      internalID: 6315675531466112811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0ed2ec5396f9000800000000000000
+      internalID: 44870201110290659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da79a290b74fac6a0800000000000000
+      internalID: -6428056708846020691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_9
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c02331dadc7b3e30800000000000000
+      internalID: 4484315133231964352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_10
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd87dd109494bcac0800000000000000
+      internalID: -3833890079863113507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017e207d076db58a0800000000000000
+      internalID: -6315218272325015792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be5983f42b6a2820800000000000000
+      internalID: 2894243516987825847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9998703e02be35820800000000000000
+      internalID: 2905924711064504729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 11
+        width: 54
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b32cd0d54601140800000000000000
+      internalID: 4688357562918255397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb894ef021ae2a4e0800000000000000
+      internalID: -1971756323537905477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29ee24579b252fe0800000000000000
+      internalID: -1214516595554064082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef00aba3b9a40870800000000000000
+      internalID: 8648223773601828847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623b027a8ef180410800000000000000
+      internalID: 1443438764669055782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse_07_19
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 35
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68df035ab809266b0800000000000000
+      internalID: -5304518481642717818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mouse_07_0: 1523498194295136187
+      Mouse_07_1: -3301060280544909642
+      Mouse_07_10: -3833890079863113507
+      Mouse_07_11: -6315218272325015792
+      Mouse_07_12: 2894243516987825847
+      Mouse_07_13: 2905924711064504729
+      Mouse_07_14: 4688357562918255397
+      Mouse_07_15: -1971756323537905477
+      Mouse_07_16: -1214516595554064082
+      Mouse_07_17: 8648223773601828847
+      Mouse_07_18: 1443438764669055782
+      Mouse_07_19: -5304518481642717818
+      Mouse_07_2: 3344235131169227431
+      Mouse_07_3: -8045467635008288713
+      Mouse_07_4: 8905246065316541962
+      Mouse_07_5: 152640784762555528
+      Mouse_07_6: 6315675531466112811
+      Mouse_07_7: 44870201110290659
+      Mouse_07_8: -6428056708846020691
+      Mouse_07_9: 4484315133231964352
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
