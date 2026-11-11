@@ -22,7 +22,6 @@ public class Knife : MonoBehaviour
     public void setDirection(int direction)
     {
         knifeDirection = direction;
-        Debug.Log("Knife Direction: " + direction);
         transform.localScale = new Vector3((direction >= 0 ? -1 : 1), 1, 1);
     }
 
