@@ -33,7 +33,8 @@ public class StagePortal : MonoBehaviour
     {
         if(doorAnimator != null)
         {
-            doorAnimator.SetTrigger("Drop");
+            doorAnimator.SetFloat("Speed", 1f);
+            doorAnimator.Play("RockDrop", 0, 0f);
         }
 
         yield return new WaitForSeconds(doorDropDuration);

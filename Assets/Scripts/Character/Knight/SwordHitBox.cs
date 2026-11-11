@@ -14,7 +14,7 @@ public class SwordHitbox : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         //Demo_Monster monster = other.GetComponentInParent<Demo_Monster>();
-        Slime monster = other.GetComponentInParent<Slime>();
+        Monster monster = other.GetComponentInParent<Monster>();
 
         if (monster == null)
             return;

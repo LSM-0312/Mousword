@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 9e3d8ce9c42358f4683e41be2aacfc47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1767586304125277659
+    second: mousword_magician-Sheet_0
+  - first:
+      213: 2487166501341620625
+    second: mousword_magician-Sheet_1
+  - first:
+      213: 2162310281423771248
+    second: mousword_magician-Sheet_2
+  - first:
+      213: -5000547795658553490
+    second: mousword_magician-Sheet_3
+  - first:
+      213: 6968575912850992313
+    second: mousword_magician-Sheet_4
+  - first:
+      213: -8044532779054584608
+    second: mousword_magician-Sheet_5
+  - first:
+      213: -5652090827597792778
+    second: mousword_magician-Sheet_6
+  - first:
+      213: -6843327752952828644
+    second: mousword_magician-Sheet_7
+  - first:
+      213: 5848136877411912976
+    second: mousword_magician-Sheet_8
+  - first:
+      213: -5915911716595038471
+    second: mousword_magician-Sheet_9
+  - first:
+      213: -611271840963721154
+    second: mousword_magician-Sheet_10
+  - first:
+      213: -4110428627220182028
+    second: mousword_magician-Sheet_11
+  - first:
+      213: -4521823860100565109
+    second: mousword_magician-Sheet_12
+  - first:
+      213: 230316997220714162
+    second: mousword_magician-Sheet_13
+  - first:
+      213: 4203113690118499817
+    second: mousword_magician-Sheet_14
+  - first:
+      213: 3877810209164018785
+    second: mousword_magician-Sheet_15
+  - first:
+      213: 8600221332318023106
+    second: mousword_magician-Sheet_16
+  - first:
+      213: -3290431269533975980
+    second: mousword_magician-Sheet_17
+  - first:
+      213: 1505258479359119392
+    second: mousword_magician-Sheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a64c81f954877e0800000000000000
+      internalID: -1767586304125277659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 63
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199e7b161c0348220800000000000000
+      internalID: 2487166501341620625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 63
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076507a9eb1120e10800000000000000
+      internalID: 2162310281423771248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67c86d164c7a9ab0800000000000000
+      internalID: -5000547795658553490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 63
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bca3d32fda55b060800000000000000
+      internalID: 6968575912850992313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec27782f041c5090800000000000000
+      internalID: -8044532779054584608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f93ace965dbf81b0800000000000000
+      internalID: -5652090827597792778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 63
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dacab8aad9701a0800000000000000
+      internalID: -6843327752952828644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 63
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01dcff75181c82150800000000000000
+      internalID: 5848136877411912976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f608c933a576eda0800000000000000
+      internalID: -5915911716595038471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e388822df735487f0800000000000000
+      internalID: -611271840963721154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbc1f701f2d4f6c0800000000000000
+      internalID: -4110428627220182028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 63
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87f1d928214f31c0800000000000000
+      internalID: -4521823860100565109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b64315b610423300800000000000000
+      internalID: 230316997220714162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed2812d1a5745a30800000000000000
+      internalID: 4203113690118499817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164ca97f6dfb0d530800000000000000
+      internalID: 3877810209164018785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd6d8e5cbf1a5770800000000000000
+      internalID: 8600221332318023106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45af69d913a0652d0800000000000000
+      internalID: -3290431269533975980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_magician-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020585d9c90c3e410800000000000000
+      internalID: 1505258479359119392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mousword_magician-Sheet_0: -1767586304125277659
+      mousword_magician-Sheet_1: 2487166501341620625
+      mousword_magician-Sheet_10: -611271840963721154
+      mousword_magician-Sheet_11: -4110428627220182028
+      mousword_magician-Sheet_12: -4521823860100565109
+      mousword_magician-Sheet_13: 230316997220714162
+      mousword_magician-Sheet_14: 4203113690118499817
+      mousword_magician-Sheet_15: 3877810209164018785
+      mousword_magician-Sheet_16: 8600221332318023106
+      mousword_magician-Sheet_17: -3290431269533975980
+      mousword_magician-Sheet_18: 1505258479359119392
+      mousword_magician-Sheet_2: 2162310281423771248
+      mousword_magician-Sheet_3: -5000547795658553490
+      mousword_magician-Sheet_4: 6968575912850992313
+      mousword_magician-Sheet_5: -8044532779054584608
+      mousword_magician-Sheet_6: -5652090827597792778
+      mousword_magician-Sheet_7: -6843327752952828644
+      mousword_magician-Sheet_8: 5848136877411912976
+      mousword_magician-Sheet_9: -5915911716595038471
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 8ab5c8b6a772f4549903924de2dc1c0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5763664597626345894
+    second: mousword_character-Sheet 1_0
+  - first:
+      213: -7716791643819846422
+    second: mousword_character-Sheet 1_1
+  - first:
+      213: -8700261735128781566
+    second: mousword_character-Sheet 1_2
+  - first:
+      213: 410395469630338078
+    second: mousword_character-Sheet 1_3
+  - first:
+      213: 58398347721845676
+    second: mousword_character-Sheet 1_4
+  - first:
+      213: -8453153206908964971
+    second: mousword_character-Sheet 1_5
+  - first:
+      213: -2243121740318657045
+    second: mousword_character-Sheet 1_6
+  - first:
+      213: 7533609840267759040
+    second: mousword_character-Sheet 1_7
+  - first:
+      213: 1941393060964874669
+    second: mousword_character-Sheet 1_8
+  - first:
+      213: 4218137643301503238
+    second: mousword_character-Sheet 1_9
+  - first:
+      213: 6806817774034648621
+    second: mousword_character-Sheet 1_10
+  - first:
+      213: -3984199235508462562
+    second: mousword_character-Sheet 1_11
+  - first:
+      213: -3855681556968148721
+    second: mousword_character-Sheet 1_12
+  - first:
+      213: -2336022075084761536
+    second: mousword_character-Sheet 1_13
+  - first:
+      213: 5820682783204254906
+    second: mousword_character-Sheet 1_14
+  - first:
+      213: -1688012815250663627
+    second: mousword_character-Sheet 1_15
+  - first:
+      213: 165731478399724286
+    second: mousword_character-Sheet 1_16
+  - first:
+      213: 8213947252418362027
+    second: mousword_character-Sheet 1_17
+  - first:
+      213: 1921204018814328378
+    second: mousword_character-Sheet 1_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a953021a66acff40800000000000000
+      internalID: 5763664597626345894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae45a60a2e278e490800000000000000
+      internalID: -7716791643819846422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 63
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20da9b04c06724780800000000000000
+      internalID: -8700261735128781566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14feb8518402b500800000000000000
+      internalID: 410395469630338078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab2e63ecf87fc000800000000000000
+      internalID: 58398347721845676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fac3ee1fd50ba80800000000000000
+      internalID: -8453153206908964971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 63
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5b95869a4ded0e0800000000000000
+      internalID: -2243121740318657045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd0c852c32cc8860800000000000000
+      internalID: 7533609840267759040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 31
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da93838f3b631fa10800000000000000
+      internalID: 1941393060964874669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60180b286d5d98a30800000000000000
+      internalID: 4218137643301503238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e762093bca67e50800000000000000
+      internalID: 6806817774034648621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c922d87e745b8c0800000000000000
+      internalID: -3984199235508462562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0173ed5d0edd7ac0800000000000000
+      internalID: -3855681556968148721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 63
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0461a1bac48c49fd0800000000000000
+      internalID: -2336022075084761536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab42f1be62837c050800000000000000
+      internalID: 5820682783204254906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5375daab949f298e0800000000000000
+      internalID: -1688012815250663627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efaad1ac6ebcc4200800000000000000
+      internalID: 165731478399724286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 31
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa3138b18dcdf170800000000000000
+      internalID: 8213947252418362027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mousword_character-Sheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e1b7a40ec79aa10800000000000000
+      internalID: 1921204018814328378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mousword_character-Sheet 1_0: 5763664597626345894
+      mousword_character-Sheet 1_1: -7716791643819846422
+      mousword_character-Sheet 1_10: 6806817774034648621
+      mousword_character-Sheet 1_11: -3984199235508462562
+      mousword_character-Sheet 1_12: -3855681556968148721
+      mousword_character-Sheet 1_13: -2336022075084761536
+      mousword_character-Sheet 1_14: 5820682783204254906
+      mousword_character-Sheet 1_15: -1688012815250663627
+      mousword_character-Sheet 1_16: 165731478399724286
+      mousword_character-Sheet 1_17: 8213947252418362027
+      mousword_character-Sheet 1_18: 1921204018814328378
+      mousword_character-Sheet 1_2: -8700261735128781566
+      mousword_character-Sheet 1_3: 410395469630338078
+      mousword_character-Sheet 1_4: 58398347721845676
+      mousword_character-Sheet 1_5: -8453153206908964971
+      mousword_character-Sheet 1_6: -2243121740318657045
+      mousword_character-Sheet 1_7: 7533609840267759040
+      mousword_character-Sheet 1_8: 1941393060964874669
+      mousword_character-Sheet 1_9: 4218137643301503238
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

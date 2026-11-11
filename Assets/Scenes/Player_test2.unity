@@ -1134,6 +1134,10 @@ PrefabInstance:
       value: Player 1(MapScene Test) (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8105220491312927496, guid: 827bfade240a89c47bd0be19baa596b8, type: 3}
+      propertyPath: spinSkill
+      value: 
+      objectReference: {fileID: 11400000, guid: 148ba0efa5d4b1d4eaae15bd5b1c4098, type: 2}
+    - target: {fileID: 8105220491312927496, guid: 827bfade240a89c47bd0be19baa596b8, type: 3}
       propertyPath: ultimateSkill
       value: 
       objectReference: {fileID: 11400000, guid: 3d16dc696e9fca44e81425452a5ce6a6, type: 2}
@@ -60868,6 +60872,7 @@ MonoBehaviour:
   dashSlashSkill: {fileID: 11400000, guid: 7cb66d49612a03b4f988d6e2dd0dd61b, type: 2}
   swordWaveSkill: {fileID: 0}
   ultimateSkill: {fileID: 0}
+  spinSkill: {fileID: 0}
   weaponPivot: {fileID: 1670753609}
   bodySpriteRenderer: {fileID: 1269851106}
   enemyLayer:
@@ -61038,7 +61043,7 @@ Transform:
   m_GameObject: {fileID: 2083914032}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0028067809, y: -0.054987907, z: -10}
+  m_LocalPosition: {x: -0.0039648693, y: -0.054977715, z: -10}
   m_LocalScale: {x: 0.727144, y: 0.727144, z: 0.727144}
   m_ConstrainProportionsScale: 0
   m_Children: []
